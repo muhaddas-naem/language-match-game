@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Language Match — Word Memory Game</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1>Language Match</h1>
+      <div class="controls">
+        <select id="modeSelect">
+          <option value="word-meaning">শব্দ ↔ অর্থ (বাংলা)</option>
+          <option value="word-image">শব্দ ↔ ছবি/emoji</option>
+        </select>
+        <select id="sizeSelect">
+          <option value="6">৬ জোড়া (১২ কার্ড)</option>
+          <option value="8" selected>৮ জোড়া (১৬ কার্ড)</option>
+          <option value="10">১০ জোড়া (২০ কার্ড)</option>
+        </select>
+        <button id="startBtn">🎮 শুরু করো</button>
+      </div>
+    </header>
+
+    <section class="stats">
+      <div>⭐ স্কোর: <span id="score">0</span></div>
+      <div>🎯 মুভ: <span id="moves">0</span></div>
+      <div>⏱ সময়: <span id="time">00:00</span></div>
+    </section>
+
+    <section id="board" class="board" aria-live="polite"></section>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-card">
+        <h2 id="modalTitle">অভিনন্দন!</h2>
+        <p id="modalText">তুমি সব মিল করেছো।</p>
+        <button id="playAgain" class="btn-primary">আবার খেলো 🔁</button>
+      </div>
+    </div>
+
+<footer class="app-footer">
+  <small>Developed by <a href="https://naem.dev" target="_blank" rel="noopener noreferrer">NAEM</a></small>
+</footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
