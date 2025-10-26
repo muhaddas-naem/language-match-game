@@ -15,3 +15,15 @@ Play, have fun, and improve your vocabulary — all at once! 🎮
 ✅ Designed with **Hind Siliguri** (Bangla) & **Poppins** (English) fonts  
 
 ---
+
+## 🚀 Live Demo
+
+🔗 [Play Language Match](https://muhaddas-naem.github.io/language-match-game/)  
+
+---
+
+## 🧩 How to Run Locally
+
+1. Clone this repository:  
+   ```bash
+   git clone https://github.com/muhaddas-naem/language-match-game.git
